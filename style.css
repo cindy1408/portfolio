@@ -1,0 +1,164 @@
+@media only screen and (max-width: 768px) {
+    footer {
+        display: none;
+    }   
+    nav {
+        display: none;
+    }
+
+   h2 {
+       position: fixed;
+       background-color: white;
+       width: 100%;
+       }
+   .container {
+       background-color: white;
+       min-height: auto;
+       width: auto;
+       overflow: auto;
+       margin: 0;
+   }
+   .main {
+       flex-direction: column;
+       align-self: auto;
+       min-height: 1500px;
+       flex-flow: column wrap;
+   }
+   .project {
+       order: 2;
+       min-width: 300px;
+       max-height: 400px;
+   }
+   .aboutMe {
+       order: 1;
+       min-width: 300px;
+       max-height: 400px;
+   }
+   .skills {
+       order: 3;
+       min-width: 300px;
+       max-height: 400px;
+   }
+.contact {
+    padding-bottom: 25px;
+    width: max-width: 500px;
+}
+}
+
+
+/* MOBILE SCREEN */
+
+html {
+height: 100%;
+width: 100%
+margin: 0px;
+padding:0px;
+}
+
+nav {
+    width: 90%;
+    text-align: right;
+    margin: 20px auto 0;
+}
+
+li {
+    display: inline-flex;
+    margin: 10px 35px 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    height: 50%;
+    border-top: solid black 5px;
+    margin: 0px auto;
+    background: rgb(246, 225, 248);
+}
+
+h2 {
+   text-align: center;
+   margin: 20px auto;
+   font-size: 250%;
+}
+
+img {
+    height: 200px;
+    width:200px;
+    border-radius:50%;
+    position: center;
+    margin-top: 0;
+
+}
+
+.main {
+    display:flex;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background:rgba(218, 160, 255, 0.6);
+    animation: entrance;
+    animation-duration: 2s;
+}
+
+@keyframes entrance{
+0% {opacity: 0;}
+100% {opacity:1;}
+}
+
+
+.project,
+.aboutMe, 
+.skills {
+    display: flex;
+    border-radius: 20%;
+    padding: 2px;
+    margin: auto;
+    flex-direction: column;
+    width: 50%;
+    height: 80%;
+    align-items: center;
+    background:rgba(255, 255, 255,0.6);
+    position:relative;
+    margin-left: 10%;
+}
+
+.profile {
+    position:absolute;
+    margin-left: 55%;
+    margin-top: 7%;
+    z-index: 1;
+}
+
+.project p,
+.aboutMe p,
+.skills p {
+    display: flex;
+    width:90%;
+    height: 100%;
+    text-align: center;
+    line-height: 35px;
+}
+
+.contact {
+    width:100%; 
+    text-align: center;
+    background: rgb(246, 225, 248);
+}
+
+form {
+    width: 50%;
+    margin-left: 600px;
+}
+footer {
+    border-top: black solid 2px;
+    width:auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 80%;
+    background: white;
+}
